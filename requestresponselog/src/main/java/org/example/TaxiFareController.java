@@ -18,11 +18,11 @@ public class TaxiFareController {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(TaxiFareController.class);
 
-    @GetMapping("/taxifare/get/")
-    public RateCard getTaxiFare() {
-        LOGGER.info("getTaxiFare() - START");
-        return new RateCard();
-    }
+//    @GetMapping("/taxifare/get/")
+//    public RateCard getTaxiFare() {
+//        LOGGER.info("getTaxiFare() - START");
+//        return new RateCard();
+//    }
 
     @PostMapping("/taxifare/calculate/")
     public String calculateTaxiFare(@RequestBody @Valid TaxiRide taxiRide) {
